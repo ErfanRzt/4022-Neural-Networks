@@ -9,29 +9,26 @@ N = 400; train2total = 0.75; drawPatterns = true;
                                      N, train2total, drawPatterns );
 ```
 <div style="text-align: center;">
-<img src="./Documentations/Figures/train-dataset.jpg" alt="TrainDataset" width="500"/>
-<img src="./Documentations/Figures/test-dataset.jpg" alt="TestDataset" width="500"/>
+  <img src="./Documentations/Figures/train-dataset.jpg" alt="TrainDataset" width="500"/>
+  <img src="./Documentations/Figures/test-dataset.jpg" alt="TestDataset" width="500"/>
 </div>
 
 ## Rosenblatt's Perceptron
 ### Train Perceptron
 ```matlab
-eta = 1;            % Learning-Rate Parameter
-w0 = [ 0, 0, 0 ];   % Initialize the Weights
+eta = 1;            
+w0 = [ 0, 0, 0 ];   
 
-% Training the Perceptron
 weights = trainPerceptron(train, eta, w0, true);
 ```
 <div style="text-align: center;">
-<img src="./Documentations/Figures/train-perceptron-gif.gif" alt="TrainPerceptron" width="500"/>
+  <img src="./Documentations/Figures/train-perceptron-gif.gif" alt="TrainPerceptron" width="500"/>
 </div>
 
 ### Test Perceptron
 ```matlab
-% Validation on the Test Dataset
-% Concluding the Accuracy of the Decision Boundry
 [class1, class2, accuracy] = testPerceptron(test, weights);
 ```
 <div style="text-align: center;">
-<img src="./Documentations/Figures/test-perceptron.jpg" alt="TestPerceptron" width="500"/>
+  <img src="./Documentations/Figures/test-perceptron.jpg" alt="TestPerceptron" width="500"/>
 </div>
