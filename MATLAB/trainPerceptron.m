@@ -36,7 +36,7 @@ for i = iRandomInputs
         figure(plotTrainDataset);
         hBoundry = plot(decisionBoundry, input, 'k', 'LineWidth', 1.25);
         hold on; 
-        hPoint = plot(train(i, 1), train(i, 2), 'mo', 'LineWidth', 2);
+        hPoint = plot(train(i, 1), train(i, 2), 'mo', 'LineWidth', 4);
         xlim([1.2*minx, 1.2*maxx]);
         ylim([1.6*miny, 1.6*maxy]);
         grid on; axis equal;
